@@ -278,6 +278,11 @@ tasks:
       replace: 'Config.EnableESXIdentity = true'
       
     - action: replace_string
+      file: ./resources/[esx]/esx_identity/config.lua
+      search: 'Config.UseSteamID       = false'
+      replace: 'Config.UseSteamID       = true'
+      
+    - action: replace_string
       file: ./resources/cui_character/fxmanifest.lua
       search: "--'@esx_identity/server/main.lua'"
       replace: "'@esx_identity/server/main.lua'"

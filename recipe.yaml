@@ -295,7 +295,7 @@ tasks:
     - action: replace_string
       file: ./resources/cui_character/shared/config.lua
       search: 'Config.UseSteamID = false'
-      replace: 'Config.UseSteamID = false'
+      replace: 'Config.UseSteamID = true'
         
     - action: replace_string
       mode: all_vars

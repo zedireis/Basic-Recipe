@@ -286,6 +286,16 @@ tasks:
       file: ./resources/cui_character/fxmanifest.lua
       search: "--'@esx_identity/server/main.lua'"
       replace: "'@esx_identity/server/main.lua'"
+      
+    - action: replace_string
+      file: ./resources/cui_character/shared/config.lua
+      search: 'Config.EnableESXIdentityIntegration = false'
+      replace: 'Config.EnableESXIdentityIntegration = true'
+      
+    - action: replace_string
+      file: ./resources/cui_character/shared/config.lua
+      search: 'Config.UseSteamID = false'
+      replace: 'Config.UseSteamID = false'
         
     - action: replace_string
       mode: all_vars

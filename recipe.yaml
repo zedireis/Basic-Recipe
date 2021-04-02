@@ -264,7 +264,7 @@ tasks:
       replace: 'Kl_Hud:onTick'
         
     - action: download_github
-      src: https://github.com/PainedPsyche/cui_character.git
+      src: https://github.com/PainedPsyche/cui_character
       ref: 53547eb233f3183969a35949702802fe111f85f5
       dest: ./resources/cui_character
         

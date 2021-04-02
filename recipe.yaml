@@ -1,8 +1,8 @@
 $engine: 3
-name: PlumeESX
+name: ServerBase
 version: 2.0.0
-author: Tabarra & Chip
-description: A full featured (13 jobs) and highly configurable yet lightweight ESX v1-final base that can be easily extended. 
+author: zedireis
+description: Servidor base sem quase nada. 
 
 tasks:
     - action: download_github

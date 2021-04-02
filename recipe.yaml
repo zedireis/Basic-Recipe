@@ -117,11 +117,6 @@ tasks:
       dest: ./resources/[esx]/esx_identity
         
     - action: download_github
-      src: https://github.com/esx-framework/esx_skin
-      ref: b98f29022a32548f2104585ee1a0c68f882a8248
-      dest: ./resources/[esx]/esx_skin
-        
-    - action: download_github
       src: https://github.com/esx-framework/esx_status
       ref: 3d526522fa78c37b5967005d19106eadd27695f1
       dest: ./resources/[esx]/esx_status

@@ -113,8 +113,13 @@ tasks:
         
     - action: download_github
       src: https://github.com/zedireis/esx_identity
-      ref: cb6219ac2410c83d7dec44058aca13821caa88de
+      ref: 788e77f34f9b9236a1cdaeeeed45054390c2eda0
       dest: ./resources/[esx]/esx_identity
+      
+    - action: download_github
+      src: https://github.com/zedireis/esx_skin
+      ref: ff46d6cc64db2a4c3bba482194cb18a8c6fa82e1
+      dest: ./resources/[esx]/esx_skin
         
     - action: download_github
       src: https://github.com/esx-framework/esx_status
@@ -296,6 +301,16 @@ tasks:
       file: ./resources/cui_character/shared/config.lua
       search: 'Config.UseSteamID = false'
       replace: 'Config.UseSteamID = true'
+      
+    - action: replace_string
+      file: ./resources/cui_character/shared/config.lua
+      search: 'Config.MinHeight        = 48'
+      replace: 'Config.MinHeight        = 140'
+      
+    - action: replace_string
+      file: ./resources/cui_character/shared/config.lua
+      search: 'Config.MaxHeight        = 96'
+      replace: 'Config.MaxHeight        = 230'
         
     - action: replace_string
       mode: all_vars
